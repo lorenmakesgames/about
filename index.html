@@ -3,16 +3,29 @@
   <head>
     <title>LorenMakesGames</title>
     <link rel="stylesheet" href="css/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
   </head>
   <body>
     <header>
-      <h1>Loren Makes Games</h1>
-      <a href="/about/"><h2>About</h2></a>
-      <a href="/games/AsteroidTrampoline"><h2>Asteroid Trampoline</h2></a>
-      <a href="/games/"><h2>Games</h2></a>
-      <a href="/contact/"><h2>Contact</h2></a>
+        <h1 noselect>Loren Makes Games</h1>
+        <div class="headerLinks">
+            <a href="/about/">
+                <h2>About</h2>
+            </a>
+            <a href="/games/AsteroidTrampoline">
+                <h2>Asteroid Trampoline</h2>
+            </a>
+            <a href="/games/">
+                <h2>Games</h2>
+            </a>
+            <a href="/contact/">
+                <h2>Contact</h2>
+            </a>
+        </div>
     </header>
-    <div class="content">
+    <div class="aboutPage">
+      <div class="content">
         <h1>About</h1>
         <p>
           Hi there! I'm a game developer interested in creating compelling interactive story experiences. I've been working with the Unity game engine since my Freshman year,
@@ -25,10 +38,25 @@
         <p>
           When I'm not coding, you can find me hiking, gaming, or writing for <a href="https://everythreeweekly.com">my school's satire newspaper.</a>
         </p>
-        <img src="img/klingman.jpg">
-        <img src="img/wiards.jpg">
-        <img src="img/train.jpg">
-        <img src="img/milo.jpg">
     </div>
+    <div class="imageWall">
+      <div class="row">
+        <div class="bigImage">
+            <img src="img/klingman.jpg">
+        </div>
+        <div class="smallImage">
+            <img src="img/optum1.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="smallImage">
+            <img src="img/train.jpg">
+        </div>
+        <div class="bigImage">
+            <img src="img/milo.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
