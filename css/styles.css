@@ -22,8 +22,8 @@ header a:hover {
 
 header h1 {
     display: flex;
-    justify-content: flex-start;
-    margin: 0.5em;
+    justify-content: center;
+    margin: default;
     pointer-events: none;
 }
 
@@ -31,16 +31,16 @@ header {
     margin:0;
     background-color: #4CAF50;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
 }
 
 .headerLinks {
     display: flex;
     margin: 0.5em;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
 }
 
 .aboutPage {
@@ -60,7 +60,7 @@ header {
     background-color: white;
     padding: 0 1.5em;
     height: inherit;
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,11 +68,11 @@ header {
 
 .imageWall {
     flex-grow: 1;
-    max-width: 60%;
+    max-width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 88vh;
+    height: 100%;
 }
 
 .row {
@@ -96,4 +96,59 @@ header {
 
 .bigImage img, .smallImage img {
     width: 100%;
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .headerLinks {
+        display: flex;
+        margin: 0.5em;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    header {
+        margin:0;
+        background-color: #4CAF50;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0.5em;
+        pointer-events: none;
+    }
+
+    .headerLinks {
+        display: flex;
+        margin: 0.5em;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .content {
+        background-color: white;
+        padding: 0 1.5em;
+        height: inherit;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .imageWall {
+        flex-grow: 1;
+        max-width: 60%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 88vh;
+    }
+
 }
