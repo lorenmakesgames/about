@@ -37,7 +37,7 @@ header {
 
 .headerLinks {
     display: flex;
-    margin: 0.5em;
+    margin: 0em;
     flex-flow: column wrap;
     justify-content: space-around;
     width: 100%;
@@ -122,14 +122,6 @@ header {
         justify-content: flex-start;
         margin: 0.5em;
         pointer-events: none;
-    }
-
-    .headerLinks {
-        display: flex;
-        margin: 0.5em;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 100%;
     }
 
     .content {
