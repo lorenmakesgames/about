@@ -1,6 +1,11 @@
+html {
+    margin: default !important;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
+    font-size: default !important;
 }
 
 header h1, header a {
@@ -40,7 +45,7 @@ header {
     margin: 0em;
     flex-flow: column wrap;
     justify-content: space-around;
-    width: 100%;
+    width: default;
 }
 
 .aboutPage {
@@ -98,6 +103,29 @@ header {
     width: 100%;
 }
 
+.active {
+    background-color: rgb(101, 226, 105);
+}
+
+#jump {
+    text-decoration: none;
+}
+
+/* footer {
+    position: absolute;
+    bottom:0;
+} */
+
+@media screen and (-ms-high-contrast: active){
+    header {
+        background-color: black;
+    }
+    body {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
 
 @media only screen and (min-width: 768px){
 
@@ -111,8 +139,8 @@ header {
 
     header {
         margin:0;
-        background-color: #4CAF50;
-        display: flex;
+        background-color: #4CAF50 !important;
+        display: flex !important;
         flex-flow: row wrap;
         justify-content: space-between;
     }
